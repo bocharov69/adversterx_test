@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main">
+        <audio loop class="audio" id="audio">
+            <source src="./misc/korn.mp3" type="audio/mpeg">
+        </audio>
+        <button class="audio-btn disabled" id="audio-btn">
+            <img src="./img/icon.svg">
+        </button>
+        <section class="section1 section">
+            <div class="section1__left-img left-img">
+                <img src="./img/p1_1.png">
+            </div>
+            <div class="section1__text text">
+                <h2 class="section1__top-text white-p">Stop spending time on mediocre online stuff!</h2>
+                <h1 class="section1__center-text heading">Explore our intriguing 3D game</h1>
+                <h3 class="section1__bottom-text">instead and experience unparalleled pleasure like you've never seen
+                    before.</h3>
+                <div class="section1__buttons buttons">
+                    <button class="section1__btn-n btn-n" onclick="go_next('section1', 'section2')">No,Thanks</button>
+                    <button class="section1__btn-y btn-y" onclick="go_next('section1', 'section2')">continue</button>
+                </div>
+            </div>
+            <div class="section1__right-img right-img">
+                <img src="./img/p1_2.png">
+            </div>
+        </section>
+        <section class="section2 section">
+            <div class="section2__text text">
+                <h1 class="section2__heading heading">Who Would You Choose as Your First Partner, if you play right now?
+                </h1>
+            </div>
+            <div class="section2__slider-wrapper">
+                <div class="section2__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="section2__slider-slide swiper-slide">
+                            <div class="section2__slider-img">
+                                <img src="./img/p2_1.png">
+                            </div>
+                            <h3 class="section2__slider-text">Your Neighbor</h3>
+                        </div>
+                        <div class="section2__slider-slide swiper-slide">
+                            <div class="section2__slider-img">
+                                <img src="./img/p2_2.png">
+                            </div>
+                            <h3 class="section2__slider-text">Step-Sister</h3>
+                        </div>
+                        <div class="section2__slider-slide swiper-slide">
+                            <div class="section2__slider-img">
+                                <img src="./img/p2_3.png">
+                            </div>
+                            <h3 class="section2__slider-text">Famous Celebrity</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section2__slider-prev"></div>
+                <div class="section2__slider-next"></div>
+            </div>
+            <div class="section2__buttons buttons">
+                <button class="section1__btn-y btn-y" onclick="go_next('section2', 'section3')">continue</button>
+            </div>
+        </section>
+        <section class="section3 section">
+            <div class="section3__left-img left-img">
+                <img src="./img/p3_1.png">
+            </div>
+            <div class="section3__text text">
+                <h1 class="section3__heading heading">Warning</h1>
+                <h2 class="section3__paragraph white-p">You must be at least 18 years old and comfortable with mature topics to play the game.</h2>
+                <div class="section3__buttons buttons">
+                    <button class="section3__btn-y btn-y" id="last-btn">ok,continue</button>
+                </div>
+            </div>
+            <div class="section3__right-img right-img">
+                <img src="./img/p3_2.png">
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
