@@ -208,12 +208,13 @@ $template_width: 1920;
     }
     &__heading {
         font-size: relate(64, 24);
+        margin-bottom: 50px;
     }
 
     &__slider-wrapper {
         position: relative;
         width: 80%;
-        margin: 50px 0;
+        margin: auto 0;
     }
     &__slider {
         position: relative;
@@ -312,6 +313,9 @@ $template_width: 1920;
             box-shadow: -4px 4px 8px 0px #00000040 inset, 4px -4px 8px 0px #00000040 inset;
         }
     }
+    &__buttons {
+        margin-top: 50px;
+    }
 }
 
 .section3 {
@@ -322,12 +326,6 @@ $template_width: 1920;
 
     &__paragraph {
         margin-bottom: 120px;
-    }
-
-    &__buttons {
-    }
-
-    &__btn-y {
     }
 }
 @media (max-width: 1023px) and (orientation: portrait) {
@@ -381,7 +379,6 @@ $template_width: 1920;
         }
         &__slider-wrapper {
             width: 100%;
-            margin: 20px 0;
         }
         &__slider-slide {
             padding: 15px 20px;
@@ -404,6 +401,12 @@ $template_width: 1920;
                 width: 75%;
                 background: url("../img/next_m.svg") 0 0 / 100% no-repeat;
             }
+        }
+        &__heading {
+            margin-bottom: 20px;
+        }
+        &__buttons {
+            margin-bottom: 20px;
         }
     }
 

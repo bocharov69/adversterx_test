@@ -284,11 +284,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section2__heading {
   font-size: calc(24px + calc(64 - 24) * ((100vw - 320px) / 1600));
+  margin-bottom: 50px;
 }
 .section2__slider-wrapper {
   position: relative;
   width: 80%;
-  margin: 50px 0;
+  margin: auto 0;
 }
 .section2__slider {
   position: relative;
@@ -391,6 +392,9 @@ h1, h2, h3, h4, h5, h6 {
 .section2__slider-next:hover {
   box-shadow: -4px 4px 8px 0px rgba(0, 0, 0, 0.2509803922) inset, 4px -4px 8px 0px rgba(0, 0, 0, 0.2509803922) inset;
 }
+.section2__buttons {
+  margin-top: 50px;
+}
 
 .section3__heading {
   font-size: calc(48px + calc(120 - 48) * ((100vw - 320px) / 1600));
@@ -399,6 +403,7 @@ h1, h2, h3, h4, h5, h6 {
 .section3__paragraph {
   margin-bottom: 120px;
 }
+
 @media (max-width: 1023px) and (orientation: portrait) {
   .audio-btn {
     right: 15px;
@@ -447,7 +452,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .section2__slider-wrapper {
     width: 100%;
-    margin: 20px 0;
   }
   .section2__slider-slide {
     padding: 15px 20px;
@@ -470,6 +474,12 @@ h1, h2, h3, h4, h5, h6 {
   .section2__slider-next:after {
     width: 75%;
     background: url("../img/next_m.svg") 0 0/100% no-repeat;
+  }
+  .section2__heading {
+    margin-bottom: 20px;
+  }
+  .section2__buttons {
+    margin-bottom: 20px;
   }
   .section3__heading {
     margin-bottom: 10px;
